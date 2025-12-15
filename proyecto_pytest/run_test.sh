@@ -27,6 +27,6 @@ pip install --upgrade pip --break-system-packages
 pip install -r requirements.txt --break-system-packages
 
 echo "Ejecutando pruebas con Pytest y generar reportes"
-venv/bin/python -m pytest tests/ --junitxml=reports/test-results.xml --html=reports/report.html --self-contained-html
+venv/bin/python -m pytest tests/ --junitxml=reports/test-results.xml --html=reports/test-reports.html --self-contained-html
 
 echo "pruebas finalizadas, resultados en reportes"
