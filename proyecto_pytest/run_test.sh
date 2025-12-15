@@ -1,16 +1,16 @@
 #!/bin/bash
  
 echo "activando el entorno virtual"
-if [! -d "venv"]; then
+if [! -d "venv" ]; then
     echo "sino existe el entorno virtual, se crea"
     python3 -m venv venv
 fi
 
 echo "Activando el entorno virtual correctamente"
-if [! -f "venv/bin/activate"]; then
+if [ -f "venv/bin/activate" ]; then
     source vend/bind/activate
-elif [ -f "venv/Script/activate"]; then #para windows
-    source vend/Script/activate
+elif [ -f "venv/Script/activate" ]; then #para windows
+    source venv/Script/activate
 else
     echo "NO se pudo activar el entorno virtual."
     exit 1
