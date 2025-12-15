@@ -8,7 +8,7 @@ fi
 
 #Creacion directorio para reportes
 
-mkdir -p reports 
+#mkdir -p reports 
 
 
 #if [ -f "venv/bin/activate" ]; then
@@ -25,10 +25,6 @@ echo "Instando dependencias"
 pip install --upgrade pip --break-system-packages
 pip install -r requirements.txt --break-system-packages
 
- 
-
-
- 
 echo "Ejecutando pruebas con Piptest y generar reportes"
 pytest tests/ --junitxml=reports/test-result.xml --html=reports/test-results.html --self-contained-html
 
