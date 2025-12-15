@@ -21,6 +21,9 @@ echo "Instando dependencias"
 pip install --upgrade pip --break-system-packages
 pip install -r requirements.txt --break-system-packages
 
+#Creacion directorio para reportes
+mkdir -p reports
+
 echo "Ejecutando pruebas con Piptest y generar reportes"
 pytest tests/ --junitxml=reports/test-result.xml --html=reports/test-results.html --self-contained-html
 
