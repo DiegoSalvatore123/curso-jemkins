@@ -9,8 +9,8 @@ fi
 echo "Activando el entorno virtual correctamente"
 if [ -f "venv/bin/activate" ]; then
     source venv/bind/activate
-elif [ -f "venv/Scripts/activate" ]; then #para windows
-    source venv/Scripts/activate
+elif [ -f "/venv/Scripts/activate" ]; then #para windows
+    source /venv/Scripts/activate
 else
     echo "NO se pudo activar el entorno virtual."
     exit 1
