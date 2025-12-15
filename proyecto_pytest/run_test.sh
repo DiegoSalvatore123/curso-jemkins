@@ -25,7 +25,7 @@ pip install -r requirements.txt --break-system-packages
 ls
 
 #Creacion directorio para reportes
-mkdir -p reports
+mkdir -p reports 
 
 #directrio despues del create
 ls
