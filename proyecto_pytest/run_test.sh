@@ -26,7 +26,7 @@ echo "Instando dependencias"
 pip install --upgrade pip --break-system-packages
 pip install -r requirements.txt --break-system-packages
 
-echo "Ejecutando pruebas con Piptest y generar reportes"
-pytest tests/ --junitxml=reports/test-result.xml --html=reports/test-results.html --self-contained-html
+echo "Ejecutando pruebas con Pytest y generar reportes"
+venv/bin/python -m pytest tests/ --junitxml=reports/test-result.xml --html=reports/test-results.html --self-contained-html
 
 echo "pruebas finalizadas, resultados en reportes"
