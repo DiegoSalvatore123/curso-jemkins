@@ -9,6 +9,7 @@ fi
 #Creacion directorio para reportes
 
 #mkdir -p reports 
+mkdir ../reports
 
 
 #if [ -f "venv/bin/activate" ]; then
