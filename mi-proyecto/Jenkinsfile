@@ -22,7 +22,7 @@ pipeline{
         always{
             echo "Siempre se ejecuta"
         }
-        sucess{
+        success{
             echo "Se ejecuta si todo se ejecuta correctamente"
         }
         failure{
